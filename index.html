@@ -19,7 +19,7 @@
 
     <body>
         <div class="row">
-            <div class="col-1 col-m-12 nav">
+            <div id="nav-language" class="col-1 col-m-12 nav">
                 <a href="#home">
                     <div class="col-12 col-m-12 nav-icon">
 	                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
@@ -29,13 +29,13 @@
                 <a href="#aboutMe">
                     <div class="col-12 col-m-12 nav-icon">
                         <i class="fa fa-user fa-2x" aria-hidden="true"></i>
-                        <h4>About me</h4>
+                        <h4>Über mich</h4>
                     </div>
                 </a>
                 <a href="#projects">
 	                <div class="col-12 col-m-12 nav-icon">
 	                    <i class="fa fa-code fa-2x" aria-hidden="true"></i>
-	                    <h4>Projects</h4>
+	                    <h4>Projekte</h4>
 	                </div>
                 </a>
                 <a href="#todo">
@@ -47,9 +47,15 @@
                 <a href="#contactMe">
                     <div class="col-12 col-m-12 nav-icon">
                         <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-                        <h4>Contact</h4>
+                        <h4>Kontakt</h4>
                     </div>
                 </a>
+                <div class="col-3 col-m-1 button" onclick="to_german()">
+                    <p>DE</p>
+                </div>
+                <div class="col-3 col-m-1 button" onclick="to_english()">
+                    <p>ENG</p>
+                </div>
             </div>
 
             <div class="col-10 col-m-12 content">
@@ -60,7 +66,7 @@
                 </div>
                 <div id="aboutMe" class="col-12 col-m-12 Divider">
                 	
-	                <div class="col-6 col-m-12">
+	                <div id="language_german" class="col-12 col-m-12">
 	                	<h2><span>Über mich</span></h2>
 	                	<p>
 	                		Mein Name ist Hüseyin Ates und ich studiere Informatik an der Johann Wolfgang Goethe Universität Frankfurt am Main. <br><br>
@@ -70,7 +76,7 @@
 	                	</p>	                    
 	                </div>
 
-	                <div class="col-6 col-m-12">
+	                <div id="language_english" class="col-12 col-m-12">
 	                	<h2><span>About me</span></h2>
 	                	<P> 
 	                		My name is Hüseyin Ates and I am studying computer science at the Johann Wolfgang Goethe University Frankfurt Main. <br><br>
@@ -82,7 +88,7 @@
 	                </div>
 	            </div>
                 <div id="projects" class="col-12 col-m-12">
-                	<h2><span>Projects</span></h2>
+                	<h2><span>Projekte</span></h2>
                 	<div class="col-4 col-m-12 projectEntry">
                 		<a href="https://atessosa.github.io/CV/" target="_blank">
                 			<div class="col-12 col-m-12">
@@ -110,15 +116,16 @@
                 			<li>Bei klicken der Menüleiste die entsprechende Überschrift unterstreichen</li>
                 			<li>Kontakt-Formular zu laufen bringen</li>
                 			<li class="done">Social-Media Icons hinzufügen</li>
-                			<li>Lebenslauf bearbeiten</li>
+                			<li class="done">Lebenslauf bearbeiten</li>
                 			<li>Weitere Projekte wie mein FoodBlog bearbeiten</li>
                 			<li>Projekt-Bilder hinzufügen</li>
+                            <li>englischen Text des Portfolios mittels JavaScript</li>
                 		</ul>
                 	</div>
                 </div>
                 <div class="col-12 col-m-12">
 	                <div id="contactMe" class="col-6 col-m-12 contactFormMargin">
-	                	<h2><span>Contact</span></h2>
+	                	<h2><span>Kontakt</span></h2>
 						<form action="" method="post">
 							<div class="col-12 col-m-12 contactForm">
 							    <input class="col-4 col-m-4" type="text" id="name" name="Name" placeholder="Name*">
@@ -141,7 +148,15 @@
                 event.preventDefault();
                 alert("Das funktioniert leider noch nicht!");
             });
-        </script>  
+            function to_english(){
+                document.getElementById("language_german").style.display = "none";
+                document.getElementById("language_english").style.display = "block";
+            }
+            function to_german(){
+                document.getElementById("language_english").style.display = "none";
+                document.getElementById("language_german").style.display = "block";
+            }
+        </script>
     </body>
     
-</html>
+</html>"
