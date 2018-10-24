@@ -19,7 +19,7 @@
 
     <body>
         <div class="row">
-            <div id="nav-language" class="col-1 col-m-12 nav">
+            <div id="navBar" class="col-1 col-m-12 nav">
                 <a href="#home">
                     <div class="col-12 col-m-12 nav-icon">
 	                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
@@ -32,12 +32,12 @@
                         <h4>Über mich</h4>
                     </div>
                 </a>
-                <a href="#projects">
+                <!-- <a href="#projects">
 	                <div class="col-12 col-m-12 nav-icon">
 	                    <i class="fa fa-code fa-2x" aria-hidden="true"></i>
 	                    <h4>Projekte</h4>
 	                </div>
-                </a>
+                </a> -->
                 <a href="#todo">
                 	<div class="col-12 col-m-12 nav-icon">
                 		<i class="fa fa-cog slow-spin fa-2x"></i>
@@ -50,12 +50,6 @@
                         <h4>Kontakt</h4>
                     </div>
                 </a>
-                <div class="col-3 col-m-1 button" onclick="to_german()">
-                    <p>DE</p>
-                </div>
-                <div class="col-3 col-m-1 button" onclick="to_english()">
-                    <p>ENG</p>
-                </div>
             </div>
 
             <div class="col-10 col-m-12 content">
@@ -66,73 +60,65 @@
                 </div>
                 <div id="aboutMe" class="col-12 col-m-12 Divider">
                 	
-	                <div id="language_german" class="col-12 col-m-12">
+	                <div id="" class="col-12 col-m-12">
 	                	<h2><span>Über mich</span></h2>
 	                	<p>
 	                		Mein Name ist Hüseyin Ates und ich studiere Informatik an der Johann Wolfgang Goethe Universität Frankfurt am Main. <br><br>
 	                		Ich beschäftige mich mit Webdesign und Webentwicklung, weil es mir Spaß macht die verschiedenen Designs und Funktionen kennenzulernen und immer wieder neues auszuprobieren.<br><br>
-	                		Zurzeit arbeite ich nebem dem Studium bei <a href="https://www.feierabend.de" target="_blank">Feierabend.de</a>, das älteste und größte soziale Netzwerk für Best-Ager in Deutschland. Dort bin ich zum erstem Mal mit Webdesign und Webentwicklung in Kontakt gekommen und beschäftige mich seither mit der Thematik. <br><br> 
-	                		Ich erweitere meine HTML und CSS Kentnisse stetig und werde mich demnächst mit PHP und JavaScript beschäftigen. Alle Projekte sind im Responsive Web Design modelliert, sodass sie auch auf mobilen Geräten aufrufbar sind.
+                            Zum erstem Mal mit der Thematik Webdesign und Webentwicklung in Berührung gekommen bin ich bei <a href="https://www.feierabend.de" target="_blank" class="feierabend">Feierabend</a>, dem ältesten und größten sozialen Netzwerk für Best-Ager in Deutschland. Dort habe ich neben dem Studium als Werkstudent angefangen und durfte unter anderem E-Mail an Mitglieder anfertigen und gestalten.<br><br> 
+                            Anschließend habe ich bei <a href="https://www.vantaio.com/" target="_blank" class="vantaio">VANTAiO</a>, einem Softwarehersteller für SAP Kunden, ein 3-monatiges Praktikum im Bereich Webentwicklung und Webdesign gemacht und wurde direkt bei Kundenprojekten eingesetzt, wo ich meine HTML, CSS und JavaScript Kenntnisse erweitern konnte und zudem viel über SAP Produkte gelernt habe.
 	                	</p>	                    
 	                </div>
 
-	                <div id="language_english" class="col-12 col-m-12">
-	                	<h2><span>About me</span></h2>
-	                	<P> 
-	                		My name is Hüseyin Ates and I am studying computer science at the Johann Wolfgang Goethe University Frankfurt Main. <br><br>
-	                		I appreciate web design and web development because I enjoy getting to know the different designs and functions and to develop them over and over again. <br><br>
-	                		At the moment I'm working beside my studies at <a href="https://www.feierabend.de" target="_blank">Feierabend.de</a>, the oldest and largest social network for best agers in Germany. Here I came in contact with web design and web development for the first time. <br><br>
-	                		I am constantly expanding my HTML and CSS knowledge and will soon be working on PHP and JavaScript. All projects are modeled in Responsive Web Design, so they can also be accessed on mobile devices.
-	                	</P>
-	                    
-	                </div>
 	            </div>
                 <div id="projects" class="col-12 col-m-12">
                 	<h2><span>Projekte</span></h2>
-                	<div class="col-4 col-m-12 projectEntry">
-                		<a href="https://atessosa.github.io/CV/" target="_blank">
-                			<div class="col-12 col-m-12">
-                				<img src="image_content/laptop-UpstartByEAD.png" title="laptop  - pixabay @ UpstartByEAD" alt="laptop">
-                			</div>
-                			<div class="col-12 col-m-12 projectEntryContent">
-                				<p><span>Lebenslauf</span></p>
-                			</div>
-                		</a>
-                	</div>
-                	<div class="col-4 col-m-12 projectEntry">
-                		<a href="https://atessosa.github.io/fooddiary/" target="_blank">
-                			<div class="col-12 col-m-12">
-                				<img src="image_content/laptop-UpstartByEAD.png" title="laptop  - pixabay @ UpstartByEAD" alt="laptop">
-                			</div>
-                			<div class="col-12 col-m-12 projectEntryContent">
-                				<p><span>FoodDiary</span></p>
-                			</div>
-                		</a>
-                	</div>
-                </div>
-                <div id="todo" class="col-12 col-m-12">
-                	<h2><span>To-Do</span></h2>
-                		<ul>
-                			<li>Bei klicken der Menüleiste die entsprechende Überschrift unterstreichen</li>
-                			<li>Kontakt-Formular zu laufen bringen</li>
-                			<li class="done">Social-Media Icons hinzufügen</li>
-                			<li class="done">Lebenslauf bearbeiten</li>
-                			<li>Weitere Projekte wie mein FoodBlog bearbeiten</li>
-                			<li>Projekt-Bilder hinzufügen</li>
-                            <li>englischen Text des Portfolios mittels JavaScript</li>
-                		</ul>
-                	</div>
+                    <div class="col-12 col-m-12 projectContent">
+                    	<div class="col-6 col-m-12 projectEntry">
+                    		<a href="https://atessosa.github.io/CV/" target="_blank">
+                                <div class="col-12 col-m-12 projectEntryContent">
+                                    <p><span>Lebenslauf</span></p>
+                                </div>
+                    			<div class="col-12 col-m-12">
+                    				<img src="image_content/lebenslauf_preview.png" title="Me" alt="Me">
+                    			</div>
+                    		</a>
+                    	</div>
+                    	<div class="col-6 col-m-12 projectEntry">
+                    		<a href="https://atessosa.github.io/fooddiary/" target="_blank">
+                                <div class="col-12 col-m-12 projectEntryContent">
+                                    <p><span>FoodDiary</span></p>
+                                </div>
+                    			<div class="col-12 col-m-12">
+                    				<img src="image_content/fooddiary_preview.png" title="food  - pixabay @ Pexels" alt="food">
+                    				<div class="hover_working_on">Ist noch in Bearbeitung</div>
+                    			</div>
+                    		</a>
+                    	</div>
+                        <div class="col-6 col-m-12 projectEntry">
+                            <a href="#" target="_self">
+                                <div class="col-12 col-m-12 projectEntryContent">
+                                    <p><span>Dropkicks FFM</span></p>
+                                </div>
+                                <div class="col-12 col-m-12">
+                                    <img src="image_content/dropkicks_preview2.png" title="Dropkicks Logo" alt="Logo">
+                                    <div class="hover_working_on">Ist noch in Bearbeitung</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-m-12">
 	                <div id="contactMe" class="col-6 col-m-12 contactFormMargin">
 	                	<h2><span>Kontakt</span></h2>
-						<form action="" method="post">
+						<form action="index.php" method="post">
 							<div class="col-12 col-m-12 contactForm">
-							    <input class="col-4 col-m-4" type="text" id="name" name="Name" placeholder="Name*">
-							    <input class="col-8 col-m-8" type="text" id="email" name="E-Mail" placeholder="E-Mail*">
+							    <input class="col-4 col-m-4" type="text" id="name" name="name" placeholder="Name*">
+							    <input class="col-8 col-m-8" type="text" id="email" name="email" placeholder="E-Mail*">
 							</div>
-						    <textarea type="text" id="message" name="Text" placeholder="Message*"></textarea> 
-						    <button id="myCheckbox">Submit</button>
+						    <textarea type="text" id="message" name="message" placeholder="Nachricht*"></textarea> 
+						    <input id="submit" name="submit" type="submit" value="Submit">
+						    <!--<button id="myCheckbox">Senden</button>-->
 						</form>
 		            	<div class="col-1 col-m-1 nav-social">
 							<a href="https://www.instagram.com/h_sse_/" target="_blank" class="fa fa-instagram fa-2x" aria-hidden="true"></a>
@@ -141,22 +127,15 @@
 							<a href="https://www.facebook.com/ates.sosa" target="_blank" class="fa fa-facebook-square fa-2x" aria-hidden="true"></a>
 						</div>
 					</div>
+                </div>
             </div>
         </div>
-         <script>
+         <!-- <script>
             document.getElementById("myCheckbox").addEventListener("click", function(event){
                 event.preventDefault();
                 alert("Das funktioniert leider noch nicht!");
             });
-            function to_english(){
-                document.getElementById("language_german").style.display = "none";
-                document.getElementById("language_english").style.display = "block";
-            }
-            function to_german(){
-                document.getElementById("language_english").style.display = "none";
-                document.getElementById("language_german").style.display = "block";
-            }
-        </script>
+        </script> -->
     </body>
     
 </html>"

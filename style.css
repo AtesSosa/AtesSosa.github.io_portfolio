@@ -14,6 +14,8 @@ h1{
 
 h2{
 	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 h4{
@@ -25,15 +27,11 @@ p, li {
 	color: white;
 }
 
-p a{
-	color: red;
-}
-
 a{
 	text-decoration: none;
 }
 
-.slow-spin {
+.nav-icon:hover .slow-spin {
   -webkit-animation: fa-spin 6s infinite linear;
   animation: fa-spin 6s infinite linear;
 }
@@ -94,8 +92,12 @@ a{
     cursor: pointer;
 }
 
-#language_english{
-	display: none;
+.feierabend{
+	color: red;
+}
+
+.vantaio{
+	color: #009fe3;
 }
 
 .fa{
@@ -313,8 +315,24 @@ textarea {
 		margin-left: 5%;
 		margin-right: 5%;
 	}
+	.hover_working_on {
+	 	position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	}
+
+	.projectContent{
+		width: 90%;
+		margin:0 5%;
+	}
 	.projectEntry{
 		width: 33.33%;
+		position: relative;
+	}
+	.toDoContent {
+		width: 90%;
+		margin: 0 5%;
 	}
 	.kontakt{
 		height: auto;
@@ -339,8 +357,15 @@ textarea {
 	}
 
 	.contactFormMargin{
-		margin-left: 25%;
-		margin-right: 25%;
+		margin-left: 5%;
+		margin-right: 5%;
+		width: 90%;
+	}
+
+	.contactFormMargin form{
+		margin-left: 20%;
+    	margin-right: 20%;
+    	width: 60%;
 	}
 	/*END: contact form */
 	
