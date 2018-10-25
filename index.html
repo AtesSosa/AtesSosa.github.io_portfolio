@@ -19,21 +19,22 @@
 
     <body>
         <div class="row">
+        	<!-- START: Navigationsleiste links -->
             <div id="navBar" class="col-1 col-m-12 nav">
                 <a href="#home">
-                    <div class="col-12 col-m-12 nav-icon">
+                    <div class="col-12 col-m-3 nav-icon">
 	                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 	                    <h4>Home</h4>
                     </div>
                 </a>
                 <a href="#aboutMe">
-                    <div class="col-12 col-m-12 nav-icon">
+                    <div class="col-12 col-m-3 nav-icon">
                         <i class="fa fa-user fa-2x" aria-hidden="true"></i>
                         <h4>Über mich</h4>
                     </div>
                 </a>
                 <a href="#projects">
-	                <div class="col-12 col-m-12 nav-icon">
+	                <div class="col-12 col-m-3 nav-icon">
 	                    <i class="fa fa-code fa-2x" aria-hidden="true"></i>
 	                    <h4>Projekte</h4>
 	                </div>
@@ -45,41 +46,48 @@
 					</div>
 				</a> -->
                 <a href="#contactMe">
-                    <div class="col-12 col-m-12 nav-icon">
+                    <div class="col-12 col-m-3 nav-icon">
                         <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
                         <h4>Kontakt</h4>
                     </div>
                 </a>
             </div>
+            <!-- ENDE: Navigationsleiste links -->
 
+            <!-- START: Webseiten-Inhalt -->
             <div class="col-10 col-m-12 content">
+            	<!-- START: Header Informationen und Full-Page Image-->
                 <div class="designer">
                     <h1 id="home"><span>Hüseyin Ates</span></h1>
                     <h3><span>Webdesigner & Hobbykoch</span></h3>
                     <img src="image_content/typewriter.jpg" title="typewriter  - pixabay @ free-photos" alt="typewriter">
                 </div>
+                <!-- ENDE: Header Informationen und Full-Page Image-->
+
+                <!-- START: einleitender Text über mich-->
                 <div id="aboutMe" class="col-12 col-m-12 Divider">
-                	
 	                <div id="" class="col-12 col-m-12">
 	                	<h2><span>Über mich</span></h2>
-	                	<p>
+	                	<p class="aboutMeText">
 	                		Mein Name ist Hüseyin Ates und ich studiere Informatik an der Johann Wolfgang Goethe Universität Frankfurt am Main. <br><br>
 	                		Ich beschäftige mich mit Webdesign und Webentwicklung, weil es mir Spaß macht die verschiedenen Designs und Funktionen kennenzulernen und immer wieder neues auszuprobieren.<br><br>
                             Zum erstem Mal mit der Thematik Webdesign und Webentwicklung in Berührung gekommen bin ich bei <a href="https://www.feierabend.de" target="_blank" class="feierabend">Feierabend</a>, dem ältesten und größten sozialen Netzwerk für Best-Ager in Deutschland. Dort habe ich neben dem Studium als Werkstudent angefangen und durfte unter anderem E-Mail an Mitglieder anfertigen und gestalten.<br><br> 
                             Anschließend habe ich bei <a href="https://www.vantaio.com/" target="_blank" class="vantaio">VANTAiO</a>, einem Softwarehersteller für SAP Kunden, ein 3-monatiges Praktikum im Bereich Webentwicklung und Webdesign gemacht und wurde direkt bei Kundenprojekten eingesetzt, wo ich meine HTML, CSS und JavaScript Kenntnisse erweitern konnte und zudem viel über SAP Produkte gelernt habe.
 	                	</p>	                    
 	                </div>
-
 	            </div>
-                <div id="projects" class="col-12 col-m-12">
+	            <!-- ENDE: einleitender Text über mich-->
+
+	            <!-- START: Überblick der Projekte-->
+                <div id="projects" class="col-12 col-m-12">  	
                 	<h2><span>Projekte</span></h2>
                     <div class="col-12 col-m-12 projectContent">
                     	<div class="col-6 col-m-12 projectEntry">
                     		<a href="https://atessosa.github.io/CV/" target="_blank">
                                 <div class="col-12 col-m-12 projectEntryContent">
-                                    <p><span>Lebenslauf</span></p>
+                                    <h3><span>Lebenslauf</span></h3>
                                 </div>
-                    			<div class="col-12 col-m-12">
+                    			<div class="col-12 col-m-12 zoom">
                     				<img src="image_content/lebenslauf_preview.png" title="Me" alt="Me">
                     			</div>
                     		</a>
@@ -87,27 +95,30 @@
                     	<div class="col-6 col-m-12 projectEntry">
                     		<a href="https://atessosa.github.io/fooddiary/" target="_blank">
                                 <div class="col-12 col-m-12 projectEntryContent">
-                                    <p><span>FoodDiary</span></p>
+                                    <h3><span>Foodblog</span></h3>
                                 </div>
-                    			<div class="col-12 col-m-12">
+                    			<div class="col-12 col-m-12 zoom">
                     				<img src="image_content/fooddiary_preview.png" title="food  - pixabay @ Pexels" alt="food">
-                    				<div class="hover_working_on">Ist noch in Bearbeitung</div>
+                    				<div class="working_on"><p>Ist noch in Bearbeitung</p></div>
                     			</div>
                     		</a>
                     	</div>
                         <div class="col-6 col-m-12 projectEntry">
                             <a href="#" target="_self">
                                 <div class="col-12 col-m-12 projectEntryContent">
-                                    <p><span>Dropkicks FFM</span></p>
+                                    <h3><span>Dropkicks FFM</span></h3>
                                 </div>
-                                <div class="col-12 col-m-12">
+                                <div class="col-12 col-m-12 zoom">
                                     <img src="image_content/dropkicks_preview2.png" title="Dropkicks Logo" alt="Logo">
-                                    <div class="hover_working_on">Ist noch in Bearbeitung</div>
+                                    <div class="working_on"><p>Ist noch in Bearbeitung</p></div>
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
+                <!-- ENDE: Überblick der Projekte-->
+
+                <!-- START: Kontaktformular-->
                 <div class="col-12 col-m-12">
 	                <div id="contactMe" class="col-6 col-m-12 contactFormMargin">
 	                	<h2><span>Kontakt</span></h2>
@@ -119,15 +130,23 @@
 						    <textarea type="text" id="message" name="message" placeholder="Nachricht*"></textarea> 
 						    <input id="myCheckbox" name="submit" type="submit" value="Senden">
 						</form>
-		            	<div class="col-1 col-m-1 nav-social">
-							<a href="https://www.instagram.com/h_sse_/" target="_blank" class="fa fa-instagram fa-2x" aria-hidden="true"></a>
-						</div>
-						<div class="col-1 col-m-1 nav-social">
-							<a href="https://www.facebook.com/ates.sosa" target="_blank" class="fa fa-facebook-square fa-2x" aria-hidden="true"></a>
-						</div>
 					</div>
                 </div>
+                <!-- ENDE: Kontaktformular-->
             </div>
+            <div id="followMeBar" class="col-1 col-m-12 followMe">
+            	<h4>Follow Me</h4>
+            	<div class="col-12 col-m-4 followMeIcon instagram zoom">
+					<a href="https://www.instagram.com/h_sse_/" target="_blank" class="fa fa-instagram fa-2x" aria-hidden="true"></a>
+				</div>
+				<div class="col-12 col-m-4 followMeIcon facebook zoom">
+					<a href="https://www.facebook.com/ates.sosa" target="_blank" class="fa fa-facebook-square fa-2x" aria-hidden="true"></a>
+				</div>
+				<div class="col-12 col-m-4 followMeIcon github zoom">
+					<a href="https://github.com/AtesSosa" target="_blank" class="fa fa-github-square fa-2x" aria-hidden="true"></a>
+				</div>
+            </div>
+            <!-- ENDE: Webseiten-Inhalt -->
         </div>
         <script>
             document.getElementById("myCheckbox").addEventListener("click", function(event){

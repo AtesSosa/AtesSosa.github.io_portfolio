@@ -4,7 +4,7 @@ html, body{
 	background-image: url("image_content/dark-denim.png");
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, p, li{
 	font-family: 'PT Serif', serif;
 }
 
@@ -22,12 +22,16 @@ h4{
 	display: none;
 }
 
-p, li {
-	font-family: 'Inconsolata', monospace;
+.aboutMeText{
 	color: white;
 }
 
 a{
+	text-decoration: none;
+}
+span {
+	position: relative;
+	color: white;
 	text-decoration: none;
 }
 
@@ -59,6 +63,7 @@ a{
 .designer img{
 	max-width: 100%;
 	max-height: 100%;
+	border-radius: 5px;
 }
 
 .nav{
@@ -70,9 +75,10 @@ a{
 }
 
 .nav-icon{
-	width: 20%;
+	width: 25%;
 	margin-top: 5%;
 	color: white;
+	border-radius: 5px;
 }
 
 .nav-icon:hover{
@@ -122,6 +128,21 @@ a{
     max-width: 100%;
     height: auto;
     width: auto\9; /* ie8 */
+    border-radius: 5px;
+}
+
+.working_on {
+	background-color: white;
+	border: solid 2px #F39C12;
+	border-radius: 5px;
+    color: #F39C12;
+    font-size: 20px;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.working_on p{
+	margin:0;
 }
 
 .kontakt{
@@ -135,38 +156,31 @@ a{
 .done{
 	text-decoration: line-through;
 }
-/* START: animated underline */
-span {
-  position: relative;
-  color: white;
-  text-decoration: none;
+.followMe{
+	height: 50px;
+	width: 100%;
+	bottom: 0;
+	background-image: url("image_content/dark-denim-nav.png");
+	color: white;
+	text-align: center;
+	float: left;
 }
 
-span:hover {
-  color: white;
+.followMeIcon{
+	width: 33.33%;
 }
 
-span:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+.facebook{
+	background-color: rgb(59, 89, 152);
+}
+.instagram{
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.github{
+	background-color: #AD5C51;
 }
 
-span:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-/* END: animated underline */
+
 /* START: contact form */
 .contactForm{
 	width: 100%;
@@ -206,6 +220,7 @@ input[type=submit], button {
     border-radius: 4px;
     cursor: pointer;
     font-family: monospace;
+    font-size: 20px;
 }
 
 textarea {
@@ -222,6 +237,7 @@ textarea {
     resize: vertical;
 }
 /* END: contact form */
+
 
 /* START: responsive */
 
@@ -258,15 +274,6 @@ textarea {
     .col-m-10 {width: 83.33%;}
     .col-m-11 {width: 91.66%;}
     .col-m-12 {width: 100%;}
-
-    .nav-icon{
-    	width: 20%;
-    	margin-top: 3%;
-    }
-
-    .nav{
-    	height: 110px;
-    }
 
     .headline2{
 		width: 150px;
@@ -311,15 +318,34 @@ textarea {
 	.content {
 		margin-left: 8.33%;
 	}
+	.aboutMeText{
+		font-size: 20px;
+	}
 	.Divider p{
 		margin-left: 5%;
 		margin-right: 5%;
 	}
-	.hover_working_on {
+
+	.zoom{
+		transition: transform .2s;
+	}
+
+	.zoom:hover{
+		-ms-transform: scale(1.1); /* IE 9 */
+    	-webkit-transform: scale(1.1); /* Safari 3-8 */
+    	transform: scale(1.1); 
+	}
+	.working_on {
+		display: none;
 	 	position: absolute;
 	    top: 50%;
 	    left: 50%;
 	    transform: translate(-50%, -50%);
+    	width: 91%;
+	}
+
+	.zoom:hover .working_on{
+		display: block;
 	}
 
 	.projectContent{
@@ -330,6 +356,8 @@ textarea {
 		width: 33.33%;
 		position: relative;
 	}
+
+	
 	.toDoContent {
 		width: 90%;
 		margin: 0 5%;
@@ -340,6 +368,37 @@ textarea {
 	.kontakt-icon{
 		width: 5%;
 	}
+	/* START: animated underline */
+	span {
+	  text-decoration: none;
+	}
+
+	span:hover {
+	  color: white;
+	}
+
+	span:before {
+	  content: "";
+	  position: absolute;
+	  width: 100%;
+	  height: 2px;
+	  bottom: 0;
+	  left: 0;
+	  background-color: white;
+	  visibility: hidden;
+	  -webkit-transform: scaleX(0);
+	  transform: scaleX(0);
+	  -webkit-transition: all 0.3s ease-in-out 0s;
+	  transition: all 0.3s ease-in-out 0s;
+	}
+
+	span:hover:before {
+	  visibility: visible;
+	  -webkit-transform: scaleX(1);
+	  transform: scaleX(1);
+	}
+	/* END: animated underline */
+
 	/* START: contact form */
 	.contactForm{
 		width: 100%;
@@ -368,6 +427,34 @@ textarea {
     	width: 60%;
 	}
 	/*END: contact form */
+	.followMe{
+		position: fixed;
+		height: 100%;
+		right: 0;
+		background-image: url("image_content/dark-denim-nav.png");
+		color: white;
+		text-align: center;
+		float:left;
+	}
+	.followMeIcon{
+		height: 4rem;
+    	width: 60%;
+    	margin: 0 20%;
+    	line-height: 4rem;
+    	border-radius: 5px;
+    	background-color: unset;
+    	background: unset;
+	}
+
+	.facebook:hover{
+		background-color: rgb(59, 89, 152);
+	}
+	.instagram:hover{
+		background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	}
+	.github:hover{
+		background-color: #AD5C51;
+	}
 	
 }
 /* END: responsive */
